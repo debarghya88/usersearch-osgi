@@ -27,3 +27,5 @@ features:install example-tasklist
 On karaf 3 and 4
 feature:repo-add mvn:net.lr.tasklist/tasklist-features/1.0.0-SNAPSHOT/xml
 feature:install example-tasklist
+
+** http://liquid-reality.de/display/liquid/Karaf+Tutorials -- Karaf Tutorial.
