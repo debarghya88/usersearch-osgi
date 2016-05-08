@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1462646717260
+Build-Jdk: 1.7.0_79
+Built-By: Debarghya
+Bundle-Blueprint: OSGI-INF/blueprint/context.xml
+Bundle-ManifestVersion: 2
+Bundle-Name: tasklist-persistence
+Bundle-SymbolicName: net.lr.tasklist.persistence
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Service: net.lr.tasklist.model.TaskService;service.exported.inter
+ faces="*"
+Import-Package: net.lr.tasklist.model;version="[1.0,2)",org.osgi.service
+ .blueprint;version="[1.0.0,2.0.0)"
+Tool: Bnd-2.1.0.20130426-122213

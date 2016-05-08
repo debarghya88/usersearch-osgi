@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1462646716450
+Build-Jdk: 1.7.0_79
+Built-By: Debarghya
+Bundle-ManifestVersion: 2
+Bundle-Name: tasklist-model
+Bundle-SymbolicName: net.lr.tasklist.model
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: net.lr.tasklist.model;version="1.0.0.SNAPSHOT"
+Tool: Bnd-2.1.0.20130426-122213
