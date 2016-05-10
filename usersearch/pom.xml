@@ -45,13 +45,13 @@
     </build>
   
   <modules>
+  	<module>usersearch-usermodel</module>
     <module>usersearch-userservice</module>
     <module>usersearch-userpersistence</module>
     <module>usersearch-searchservice</module>
     <module>usersearch-searchpersistence</module>
     <module>usersearch-ui</module>
     <module>usersearch-features</module>
-    <module>usersearch-usermodel</module>
   </modules>
   
 </project>
