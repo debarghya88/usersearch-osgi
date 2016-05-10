@@ -50,6 +50,7 @@
     <module>usersearch-searchservice</module>
     <module>usersearch-searchpersistence</module>
     <module>usersearch-ui</module>
+    <module>usersearch-features</module>
   </modules>
   
 </project>
