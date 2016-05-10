@@ -49,6 +49,7 @@
     <module>usersearch-userpersistence</module>
     <module>usersearch-searchservice</module>
     <module>usersearch-searchpersistence</module>
+    <module>usersearch-ui</module>
   </modules>
   
 </project>
