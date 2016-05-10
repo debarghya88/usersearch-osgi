@@ -10,11 +10,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   
-  <groupId>dar.osgi.usersearch</groupId>
   <artifactId>usersearch-ui</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <name>usersearch-ui</name>
-  <url>http://maven.apache.org</url>
   <packaging>bundle</packaging>
   
   <dependencies>
@@ -23,6 +19,16 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>dar.osgi.usersearch</groupId>
+      <artifactId>usersearch-userservice</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
     </dependency>
   </dependencies>
   

@@ -10,11 +10,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   
-  <groupId>dar.osgi.usersearch</groupId>
   <artifactId>usersearch-userservice</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <name>usersearch-userservice</name>
-  <url>http://maven.apache.org</url>
   <packaging>bundle</packaging>
   
   <dependencies>
