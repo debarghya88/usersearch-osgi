@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0">
+	<reference id="userRegister" availability="mandatory" interface="dar.osgi.usersearch.userservice.UserRegister" />
+	<reference id="userLogin" availability="mandatory" interface="dar.osgi.usersearch.userservice.UserLogin" />
+
+	<bean id="userloginservlet" class="dar.osgi.usersearch.ui.UserLoginServlet">
+		<property name="userRegister" ref="userRegister"></property>
+		<property name="userLogin" ref="userLogin"></property>
+	</bean>
+	<service ref="userloginservlet" interface="javax.servlet.http.HttpServlet">
+		<service-properties>
+			<entry key="alias" value="/usersearch" />
+		</service-properties>
+	</service>
+</blueprint>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features
+    xmlns="http://karaf.apache.org/xmlns/features/v1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.0.0 http://karaf.apache.org/xmlns/features/v1.0.0"
+    name="usersearch">
+    
+    <feature name="usersearch" version="${pom.version}">
+        <feature>usersearch-userservice</feature>
+        <feature>usersearch-ui</feature>
+    </feature>
+
+	<feature name="usersearch-userservice" version="${pom.version}">
+        <bundle>mvn:dar.osgi.usersearch/usersearch-userservice/${pom.version}</bundle>
+    </feature>
+    
+    <feature name="usersearch-ui" version="${pom.version}">
+        <feature>http</feature>
+        <feature>http-whiteboard</feature>
+        <bundle>mvn:dar.osgi.usersearch/usersearch-userservice/${pom.version}</bundle>
+        <bundle>mvn:dar.osgi.usersearch/usersearch-ui/${pom.version}</bundle>
+    </feature>
+    
+</features>
