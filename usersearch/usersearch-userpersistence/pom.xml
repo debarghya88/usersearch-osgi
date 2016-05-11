@@ -10,11 +10,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   
-  <groupId>dar.osgi.usersearch</groupId>
   <artifactId>usersearch-userpersistence</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <name>usersearch-userpersistence</name>
-  <url>http://maven.apache.org</url>
   <packaging>bundle</packaging>
   
   <dependencies>
@@ -24,5 +20,11 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>dar.osgi.usersearch</groupId>
+      <artifactId>usersearch-dbconnection</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    
   </dependencies>
 </project>

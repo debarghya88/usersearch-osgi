@@ -6,12 +6,24 @@
     name="usersearch">
     
     <feature name="usersearch" version="${pom.version}">
+    	<feature>usersearch-dbconnection</feature>
+    	<feature>usersearch-userpersistence</feature>
         <feature>usersearch-userservice</feature>
         <feature>usersearch-ui</feature>
+    </feature>
+    
+    <feature name="usersearch-dbconnection" version="${pom.version}">
+        <bundle>mvn:dar.osgi.usersearch/usersearch-dbconnection/${pom.version}</bundle>
+    </feature>
+    
+    <feature name="usersearch-userpersistence" version="${pom.version}">
+        <bundle>mvn:dar.osgi.usersearch/usersearch-userpersistence/${pom.version}</bundle>
+        <bundle>mvn:dar.osgi.usersearch/usersearch-dbconnection/${pom.version}</bundle>
     </feature>
 
 	<feature name="usersearch-userservice" version="${pom.version}">
         <bundle>mvn:dar.osgi.usersearch/usersearch-userservice/${pom.version}</bundle>
+        <bundle>mvn:dar.osgi.usersearch/usersearch-userpersistence/${pom.version}</bundle>
     </feature>
     
     <feature name="usersearch-ui" version="${pom.version}">
